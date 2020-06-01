@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Social Launcher</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <style>
+        /* Modal Structure */
+        html,
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            margin: 0;
+            min-height: 180px;
+            padding: 0;
+            width: 250px;
+            height: 320px;
+            border-style: dotted;
+            border-width: 0.8px;
+        }
+
+        h1 {
+            font-family: "Menlo", monospace;
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0;
+            color: #2f5876;
+        }
+
+        a:link,
+        a:visited {
+            color: #000000;
+            outline: 0;
+            text-decoration: none;
+        }
+
+        img {
+            width: 30px;
+        }
+
+        .modal-header {
+            align-items: center;
+            border-bottom: 0.5px solid #dadada;
+        }
+
+        .modal-content {
+            padding: 0 22px;
+        }
+
+        .modal-icons {
+            border-top: 0.5px solid #dadada;
+            height: 50px;
+            width: 100%;
+        }
+
+        .logo {
+            padding: 16px;
+        }
+
+        .logo-icon {
+            vertical-align: text-bottom;
+            margin-right: 12px;
+        }
+
+        .version {
+            color: #444;
+            font-size: 12px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 22px;
+        }
+
+        .flex {
+            opacity: 1;
+            transition: opacity 0.2s ease-in-out;
+            width: 120px;
+        }
+
+        .flex:hover {
+            opacity: 0.4;
+        }
+
+        .flex .fa {
+            font-size: 40px;
+            color: #2f5876;
+        }
+
+        .credit{
+            font-size: 12px;
+            font-weight: 400;
+            margin: 0;
+            color: #2f5876;
+            padding: 17px 0 0 35px;
+        }
+
+        h5{
+             font-size: 12px;
+            font-weight: 600;
+            margin: 0;
+            color: #2f5876;
+            padding: 5px 0 0 85px;
+        }
+    </style>
+    <script src="popup.js"></script>
+    <script src="background.js"></script>
+</head>
+
+<body>
+    <div class="modal-header">
+        <h1 class="logo">
+            <img class="logo-icon" src="images/social_logo.png" />Social
+            Launcher
+        </h1>
+    </div>
+
+    <div class="modal-icons">
+        <div class="flex-container">
+            <div class="flex">
+                <a href="https://www.facebook.com" target="_blank" title="facebook">
+                    <i class="fa fa-facebook" style="color:steelblue "></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://www.instagram.com" target="_blank" title="instagram">
+                    <i class="fa fa-instagram" style="color:#e70071 "></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://www.twitter.com" target="_blank" title="twitter">
+                    <i class="fa fa-twitter" style="color:deepskyblue "></i>
+                </a>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="flex">
+                <a href="https://www.gmail.com" target="_blank" title="gmail">
+                    <i class="fa fa-envelope-o" style="color:tomato "></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://www.github.com" target="_blank" title="github">
+                    <i class="fa fa-github" style="color:black "></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://www.linkedin.com/" target="_blank" title="linkedin">
+                    <i class="fa fa-linkedin" style="color:#0077b5 "></i>
+                </a>
+            </div>
+        </div>
+                <div class="flex-container">
+            <div class="flex">
+                <a href="https://www.youtube.com" target="_blank" title="youtube">
+                    <i class="fa fa-youtube-play" style="color:red "></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://www.skype.com" target="_blank" title="skype">
+                    <i class="fa fa-skype" style="color:#03a9f4"></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://web.whatsapp.com" target="_blank" title="whatsapp">
+                    <i class="fa fa-whatsapp" style="color:#64b161 "></i>
+                </a>
+            </div>
+        </div>
+    <h3 class="credit">Developed by  <a href="https://www.linkedin.com/in/akash-agarwal21/" target="_blank"><u> AKASH AGARWAL </u></a></h3>
+	<h5>Version 1.0</h5>
+    </div>
+
+</body>
+
+</html>
