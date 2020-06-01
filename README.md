@@ -1,1 +1,1 @@
-# Social_Launcher-Chrome-Extension
+# Social Launcher (Chrome-Extension)
